@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Health Care</title>
+    <title>Spring Health</title>
     <style>
       * {
         margin: 0;
@@ -11,7 +11,7 @@
         box-sizing: border-box;
       }
       body {
-        font-family: Muototrial,sans-serif;
+        font-family: Muototrial, sans-serif;
         background-image: url(bg-img.webp);
         background-position: center;
         background-repeat: no-repeat;
@@ -28,10 +28,12 @@
         height: 100vh;
         z-index: -1;
         background-image: linear-gradient(
-          to bottom,
-          rgba(0, 0, 0, 0.3),
-          rgba(0, 0, 0, 0.3)
-        );
+  to bottom,
+  rgba(0, 0, 0, 0.5),
+  rgba(0, 0, 0, 0.3),
+  rgba(0, 0, 0, 0.1)
+);
+
       }
       .navbar {
         display: flex;
@@ -59,10 +61,10 @@
       .menus {
         display: flex;
         margin-right: 35px;
-      }
-      ul.menus {
         list-style: none;
+
       }
+      
 
       li a {
         display: block;
@@ -70,7 +72,7 @@
         text-align: center;
         padding: 14px 20px;
         text-decoration: none;
-        font-size: 18px;
+        font-size: 16px;
         font-weight: 600;
         position: relative;
       }
@@ -81,18 +83,17 @@
         left: 10px;
         width: 0;
         height: 4px;
-        background-color: #00CC76;
+        background-color: #00cc76;
         border-radius: 5px;
         transition: all 0.3s ease-in-out;
       }
       li a:hover::after {
         width: 85%;
-        
       }
 
       .right-btns {
         margin-left: auto;
-        padding-right: 20px;
+        padding-right: 25px;
       }
       .login-btn {
         border: none;
@@ -125,11 +126,55 @@
         background-color: #346e36;
         color: #fff;
       }
+      .main-section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 80vh;}
+      .title-line {
+        font-size: 55px;
+        font-weight: 700;
+        color: #fff;
+        margin-bottom: 20px;
+      }
+      .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 50%;
+      min-height: 300px;
+      max-height: 600px;
+margin-top: 40px;        
+      }
+      .content {
+        text-align: center;
+      }
+      .main-des {
+        color: #fff;
+        font-size: 20px;
+        font-weight: 500;
+        margin-bottom: 30px;
+        padding: 0 50px;
+      }
+      .action-btns {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .action-btns >a {
+        margin-right: 15px;
+        padding: 15px 20px;
+      }
+      .action-btns >a:first-child {
+        padding: 17px 20px;
+      }
+     
+
     </style>
   </head>
   <body>
     <div class="navbar">
-      <h1 class="logo">Health Care</h1>
+      <h1 class="logo">Spring Health</h1>
       <div class="right-side">
         <ul class="menus">
           <li><a href="#">Our Solutions</a></li>
@@ -145,5 +190,22 @@
         </div>
       </div>
     </div>
+    <section class="main-section">
+      <div class="container">
+        <div class="content">
+          <h1 class="title-line">Better Mental Health <br> Starts Here</h1>
+          <p class="main-des">
+            Everyone benefits when people feel their best. Spring Health is the
+            proven mental health solution for employers and health plans that
+            changes lives and drives business results, everywhere.
+          </p>
+          <div class="action-btns">
+            <a href="#" class="req-btn">Request a Demo</a>
+            <a href="#" class="login-btn">Explore more</a>
+
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
